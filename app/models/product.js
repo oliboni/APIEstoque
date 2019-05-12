@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     unitPrice: DataTypes.FLOAT
   }, {});
   Product.associate = function(models) {
-    Product.belongsTo(models.Category, {foreignKey: 'idCategory'}),
+    Product.belongsTo(models.Category, {foreignKey: 'idCategory'})
     Product.belongsTo(models.Provider,{foreignKey: 'idProvider'})
   };
   return Product;

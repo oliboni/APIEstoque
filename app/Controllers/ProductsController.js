@@ -18,9 +18,10 @@ router.post('/', function (req, res) {
 
 //Get all
 router.get('/', function (req, res) {
-    models.Product.findAll({include: {
-            model: models.Category, required:true
-        }}).then(
+    models.Product.findAll({include: [
+        {model: models.Category},
+        {model: models.Provider}
+        ]}).then(
         products => res.status(200).send(products)
     )
 })
