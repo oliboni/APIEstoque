@@ -5,12 +5,14 @@ var AdressesControllers = require("./app/Controllers/AdressesControllers")
 var ProviderControllers = require("./app/Controllers/ProvidersControllers")
 var ProductsControllers = require("./app/Controllers/ProductsController")
 var InputControllers = require("./app/Controllers/InputControllers")
+var OutputsControllers = require("./app/Controllers/OutputsControllers")
 
 app.use("/categories", CategoriesControllers)
 app.use("/address", AdressesControllers)
 app.use("/providers", ProviderControllers)
 app.use("/products", ProductsControllers)
 app.use("/inputs", InputControllers)
+app.use("/outputs", OutputsControllers)
 
 app.listen(3000, function () {
     console.log("Server listening on the port 3000!")
