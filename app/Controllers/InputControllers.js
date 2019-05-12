@@ -11,57 +11,60 @@ router.use(bodyParser.json())
 
 //create
 router.post('/', function (req, res) {
-    models.Product.create(req.body).then(
-        products => res.status(200).send(products)
+    models.Input.create(req.body).then(
+        inputs => res.status(200).send(inputs)
     ).catch(err => res.status(500).send("Algo de errado não está certo"+err))
 })
 
 //Get all
 router.get('/', function (req, res) {
-    models.Product.findAll({include: [
-        {model: models.Category},
-        {model: models.Provider}
+    models.Input.findAll({include: [
+            {model: models.Product},
+            {model: models.Provider}
         ]}).then(
-        products => res.status(200).send(products)
+        inputs => res.status(200).send(inputs)
     )
 })
 
 //Find one by id
 router.get('/:id', function(req, res) {
-    models.Product.findByPk(req.params.id, {include: [
-        {model: models.Category, required:true},
-        {model: models.Provider, required:true}
-    ]}).then(products => {
-        if (!products) {
+    models.Input.findByPk(req.params.id, {include: [
+        {model: models.Product, required:true},
+        {model: models.Provider, required: true}
+
+    ]}).then(inputs => {
+        if (!inputs) {
             res.status(404).send("NOT FOUND")
         }
-        res.status(200).send(products)
+        res.status(200).send(inputs)
     }).catch(err => res.status(500).send(err))
 })
 
 //Update
 router.put('/:id', function(req, res) {
-    models.Product.findByPk(req.params.id).then(products => {
-        if (!products) {
+    models.Input.findByPk(req.params.id).then(inputs => {
+        if (!inputs) {
             res.status(404).send("NOT FOUND")
         }
 
-        products.update({
-            idProduct: req.body.idProduct,
+        inputs.update({
+            idCategory: req.body.idCategory,
             idProvider: req.body.idProvider,
-            name: req.body.name,
-            unitPrice: req.body.unitPrice
+            date: req.body.date,
+            amount: req.body.amount,
+            unitPrice: req.body.unitPrice,
+            totalPrice: req.body.totalPrice
         })
-        res.status(200).send(products)
+        res.status(200).send(inputs)
     })
 
 })
 
 //Delete
 router.delete('/:id', function (req, res) {
-    models.Product.destroy({
+    models.Input.destroy({
         where:{id: req.params.id}
-    }).then(Product => {
+    }).then(Input => {
         res.status(200).send("Registro excluido com sucesso")
     })
 })
