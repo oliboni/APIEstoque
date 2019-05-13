@@ -1,4 +1,4 @@
-'use strict';
+'use strict';Addresses
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Categories', {
@@ -9,6 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       createdAt: {

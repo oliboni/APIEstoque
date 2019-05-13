@@ -50,7 +50,8 @@ router.put('/:id', function(req, res) {
             idProduct: req.body.idProduct,
             idProvider: req.body.idProvider,
             name: req.body.name,
-            unitPrice: req.body.unitPrice
+            unitPrice: req.body.unitPrice,
+            amount: req.body.amount
         })
         res.status(200).send(products)
     })

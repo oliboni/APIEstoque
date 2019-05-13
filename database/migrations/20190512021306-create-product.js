@@ -19,7 +19,7 @@ module.exports = {
       idProvider: {
         allowNull: false,
         type: Sequelize.INTEGER,
-        preferences:{
+        references:{
           model: 'Providers',
           key:'id'
         }
@@ -30,6 +30,9 @@ module.exports = {
       },
       unitPrice: {
         type: Sequelize.FLOAT
+      },
+      amount: {
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,

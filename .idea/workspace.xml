@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07008732-4489-43be-8f8a-4ed32ba0c15b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Controllers/UsersControllers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/AdressesControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/AdressesControllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/CategoriesControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/CategoriesControllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/ProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/ProductsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controllers/ProvidersControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/ProvidersControllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/20190511201313-create-category.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/20190511201313-create-category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/20190511205003-create-address.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/20190511205003-create-address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/20190512000600-create-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/20190512000600-create-provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/20190512021306-create-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/20190512021306-create-product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/20190512134441-create-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/20190512134441-create-input.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,28 +26,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
+        <entry file="file://$PROJECT_DIR$/app/models/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controllers/InputControllers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/output.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            <state relative-caret-position="390">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -56,17 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Controllers/UsersControllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Controllers/OutputsControllers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="19" selection-end-line="67" selection-end-column="23" />
+            <state relative-caret-position="286">
+              <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -111,31 +92,34 @@
         <option value="$PROJECT_DIR$/database/migrations/20190510004412-create-category.js" />
         <option value="$PROJECT_DIR$/database/migrations/20190510004330-create-category.js" />
         <option value="$PROJECT_DIR$/app/models/category.js" />
-        <option value="$PROJECT_DIR$/app/Controllers/CategoriesControllers.js" />
         <option value="$PROJECT_DIR$/app/Controllers/AdressControllers.js" />
         <option value="$PROJECT_DIR$/app/Controllers/Providers.js" />
-        <option value="$PROJECT_DIR$/app/Controllers/AdressesControllers.js" />
         <option value="$PROJECT_DIR$/app/models/provider.js" />
-        <option value="$PROJECT_DIR$/database/migrations/20190512000600-create-provider.js" />
-        <option value="$PROJECT_DIR$/app/Controllers/ProvidersControllers.js" />
-        <option value="$PROJECT_DIR$/database/migrations/20190512021306-create-product.js" />
-        <option value="$PROJECT_DIR$/app/models/product.js" />
         <option value="$PROJECT_DIR$/app/models/input.js" />
-        <option value="$PROJECT_DIR$/database/migrations/20190512134441-create-input.js" />
-        <option value="$PROJECT_DIR$/app/Controllers/ProductsController.js" />
         <option value="$PROJECT_DIR$/app/Controllers/InputControllers.js" />
         <option value="$PROJECT_DIR$/database/migrations/20190512140636-create-output.js" />
         <option value="$PROJECT_DIR$/app/Controllers/OutputsControllers.js" />
         <option value="$PROJECT_DIR$/app/models/output.js" />
         <option value="$PROJECT_DIR$/database/migrations/20190512141718-create-user.js" />
         <option value="$PROJECT_DIR$/app/Controllers/UsersControllers.js" />
+        <option value="$PROJECT_DIR$/app/Controllers/CategoriesControllers.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/app/Controllers/AdressesControllers.js" />
+        <option value="$PROJECT_DIR$/app/Controllers/ProvidersControllers.js" />
+        <option value="$PROJECT_DIR$/database/migrations/20190511205003-create-address.js" />
+        <option value="$PROJECT_DIR$/database/migrations/20190511201313-create-category.js" />
+        <option value="$PROJECT_DIR$/database/migrations/20190512000600-create-provider.js" />
+        <option value="$PROJECT_DIR$/database/migrations/20190512021306-create-product.js" />
+        <option value="$PROJECT_DIR$/app/models/product.js" />
+        <option value="$PROJECT_DIR$/app/Controllers/ProductsController.js" />
+        <option value="$PROJECT_DIR$/database/migrations/20190512134441-create-input.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
     <option name="y" value="-2" />
-    <option name="width" value="1920" />
+    <option name="width" value="960" />
     <option name="height" value="1082" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -227,17 +211,19 @@
       <workItem from="1557592472655" duration="1849000" />
       <workItem from="1557604890018" duration="12510000" />
       <workItem from="1557662700762" duration="7056000" />
+      <workItem from="1557760833826" duration="3355000" />
+      <workItem from="1557785163816" duration="2812000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28023000" />
+    <option name="totallyTimeSpent" value="34190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18133895" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18081181" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -292,28 +278,7 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/20190510004412-create-category.js" />
     <entry file="file://$PROJECT_DIR$/database/migrations/20190510004331-create-category.js" />
     <entry file="file://$PROJECT_DIR$/database/migrations/20190510010631-create-category.js" />
-    <entry file="file://$PROJECT_DIR$/app/models/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/20190511203831-create-address.js" />
-    <entry file="file://$PROJECT_DIR$/app/Controllers/CategoriesControllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controllers/AdressesControllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@types/node/cluster.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -321,101 +286,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/20190511201313-create-category.js">
+    <entry file="file://$PROJECT_DIR$/app/Controllers/CategoriesControllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="49" />
+        <state relative-caret-position="412">
+          <caret line="56" column="112" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="112" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/address.js">
+    <entry file="file://$PROJECT_DIR$/app/Controllers/AdressesControllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/20190511205003-create-address.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/provider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controllers/ProvidersControllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/category.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/20190512000600-create-provider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/20190512021306-create-product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controllers/ProductsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/20190512134441-create-input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/20190512140636-create-output.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/output.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        <state relative-caret-position="437">
+          <caret line="59" column="126" selection-start-line="59" selection-start-column="126" selection-end-line="59" selection-end-column="126" />
         </state>
       </provider>
     </entry>
@@ -426,24 +307,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controllers/OutputsControllers.js">
+    <entry file="file://$PROJECT_DIR$/app/models/provider.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" selection-end-line="67" selection-end-column="23" />
+        <state relative-caret-position="135">
+          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controllers/InputControllers.js">
+    <entry file="file://$PROJECT_DIR$/app/models/category.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controllers/ProvidersControllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controllers/OutputsControllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/address.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/20190511201313-create-category.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/20190511205003-create-address.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/20190512000600-create-provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/output.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controllers/ProductsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/20190512021306-create-product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/20190512140636-create-output.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/20190512134441-create-input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controllers/InputControllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -456,8 +442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controllers/UsersControllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="286">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
         </state>
       </provider>
     </entry>

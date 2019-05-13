@@ -9,15 +9,19 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       cnpj: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       name: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       phone: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       idAddress: {
+        allowNull: false,
         type: Sequelize.INTEGER,
         references: {
           model: 'Addresses',

@@ -57,7 +57,7 @@ router.delete('/:id', function (req, res) {
         where:{id: req.params.id}
     }).then(Address => {
         res.status(200).send("Registro excluido com sucesso")
-    })
+    }).catch(err => res.status(403).send("Registro não pode ser excluido pois existe Fornecedores cadastrados nestes endereços"))
 })
 
 
