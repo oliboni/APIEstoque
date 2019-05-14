@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07008732-4489-43be-8f8a-4ed32ba0c15b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Controllers/LoginController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/security.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/AdressesControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/AdressesControllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/CategoriesControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/CategoriesControllers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/InputControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/InputControllers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controllers/OutputsControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/OutputsControllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/ProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/ProductsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/ProvidersControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/ProvidersControllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/UsersControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/UsersControllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,11 +25,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controllers/LoginController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+            <state relative-caret-position="360">
+              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Controllers/InputControllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -50,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state relative-caret-position="240">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -115,8 +111,6 @@
         <option value="$PROJECT_DIR$/database/migrations/20190512134441-create-input.js" />
         <option value="$PROJECT_DIR$/app/Controllers/ProvidersControllers.js" />
         <option value="$PROJECT_DIR$/app/Controllers/ProductsController.js" />
-        <option value="$PROJECT_DIR$/app/Controllers/OutputsControllers.js" />
-        <option value="$PROJECT_DIR$/app/Controllers/InputControllers.js" />
         <option value="$PROJECT_DIR$/app/Controllers/CategoriesControllers.js" />
         <option value="$PROJECT_DIR$/app/Controllers/AdressesControllers.js" />
         <option value="$PROJECT_DIR$/app/Controllers/UsersControllers.js" />
@@ -127,6 +121,8 @@
         <option value="$PROJECT_DIR$/app/helpers/security.js" />
         <option value="$PROJECT_DIR$/app/Controllers/LoginController.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/app/Controllers/InputControllers.js" />
+        <option value="$PROJECT_DIR$/app/Controllers/OutputsControllers.js" />
       </list>
     </option>
   </component>
@@ -214,12 +210,12 @@
       <workItem from="1557604890018" duration="12510000" />
       <workItem from="1557662700762" duration="7056000" />
       <workItem from="1557760833826" duration="3355000" />
-      <workItem from="1557785163816" duration="7637000" />
+      <workItem from="1557785163816" duration="10683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39015000" />
+    <option name="totallyTimeSpent" value="42061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
@@ -393,20 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controllers/InputControllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controllers/OutputsControllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Controllers/ProductsController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
@@ -476,17 +458,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/app/Controllers/LoginController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="360">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controllers/LoginController.js">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+        <state relative-caret-position="240">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controllers/OutputsControllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controllers/InputControllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
         </state>
       </provider>
     </entry>

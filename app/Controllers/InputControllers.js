@@ -12,7 +12,7 @@ router.use(bodyParser.json())
 
 //create
 router.post('/', security.verifyJWT, function (req, res) {
-    models.Input.create(req.body).then(
+    models.Input.create(req.body,).then(
         inputs => res.status(200).send(inputs)
     ).catch(err => res.status(500).send("Erro, Verificar "+err))
 })
@@ -49,7 +49,7 @@ router.put('/:id', security.verifyJWT, function(req, res) {
         }
 
         inputs.update({
-            idCategory: req.body.idCategory,
+            idProduct: req.body.idProduct,
             idProvider: req.body.idProvider,
             date: req.body.date,
             amount: req.body.amount,
