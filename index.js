@@ -1,5 +1,7 @@
 var express = require('express')
 var app = express()
+require("dotenv-safe").load()
+
 var CategoriesControllers = require("./app/Controllers/CategoriesControllers")
 var AdressesControllers = require("./app/Controllers/AdressesControllers")
 var ProviderControllers = require("./app/Controllers/ProvidersControllers")
@@ -7,6 +9,7 @@ var ProductsControllers = require("./app/Controllers/ProductsController")
 var InputControllers = require("./app/Controllers/InputControllers")
 var OutputsControllers = require("./app/Controllers/OutputsControllers")
 var UsersControllers = require("./app/Controllers/UsersControllers")
+var LoginController = require("./app/Controllers/LoginController")
 
 app.use("/categories", CategoriesControllers)
 app.use("/address", AdressesControllers)
@@ -15,6 +18,7 @@ app.use("/products", ProductsControllers)
 app.use("/inputs", InputControllers)
 app.use("/outputs", OutputsControllers)
 app.use("/users", UsersControllers)
+app.use("/login", LoginController)
 
 app.listen(3000, function () {
     console.log("Server listening on the port 3000!")

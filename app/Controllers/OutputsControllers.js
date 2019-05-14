@@ -2,7 +2,8 @@
 const express = require('express'),
     router = express.Router(),
     models = require('../models'),
-    bodyParser = require('body-parser')
+    bodyParser = require('body-parser'),
+    security = require('../helpers/security')
 
 router.use(bodyParser.urlencoded({extended: true}))
 router.use(bodyParser.json())
@@ -10,14 +11,14 @@ router.use(bodyParser.json())
 //CRUD
 
 //create
-router.post('/', function (req, res) {
+router.post('/', security.verifyJWT, function (req, res) {
     models.Output.create(req.body).then(
         outputs => res.status(200).send(outputs)
-    ).catch(err => res.status(500).send("Algo de errado não está certo"+err))
+    ).catch(err => res.status(500).send("Erro, Verificar "+err))
 })
 
 //Get all
-router.get('/', function (req, res) {
+router.get('/', security.verifyJWT, function (req, res) {
     models.Output.findAll({include:
             {model: models.Product}
         }).then(
@@ -26,7 +27,7 @@ router.get('/', function (req, res) {
 })
 
 //Find one by id
-router.get('/:id', function(req, res) {
+router.get('/:id', security.verifyJWT, function(req, res) {
     models.Output.findByPk(req.params.id, {include:
             {model: models.Product, required:true}
         }).then(outputs => {
@@ -38,7 +39,7 @@ router.get('/:id', function(req, res) {
 })
 
 //Update
-router.put('/:id', function(req, res) {
+router.put('/:id', security.verifyJWT, function(req, res) {
     models.Output.findByPk(req.params.id).then(outputs => {
         if (!outputs) {
             res.status(404).send("NOT FOUND")
@@ -56,7 +57,7 @@ router.put('/:id', function(req, res) {
 })
 
 //Delete
-router.delete('/:id', function (req, res) {
+router.delete('/:id', security.verifyJWT, function (req, res) {
     models.Output.destroy({
         where:{id: req.params.id}
     }).then(Output => {
