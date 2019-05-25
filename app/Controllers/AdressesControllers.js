@@ -2,7 +2,7 @@
 const express = require('express'),
     router = express.Router(),
     models = require('../models'),
-    bodyParser = require('body-parser'),
+    bodyParser = require('body-parser')
     security = require('../helpers/security')
 
 router.use(bodyParser.urlencoded({extended: true}))
@@ -11,7 +11,7 @@ router.use(bodyParser.json())
 //CRUD
 
 //create
-router.post('/', function (req, res) {
+router.post('/', security.verifyJWT, function (req, res) {
     models.Address.create(req.body).then(
         Addresses => res.status(200).send(Addresses)
     ).catch(err => res.status(500).send("Erro, Verificar "+err))
@@ -25,8 +25,8 @@ router.get('/', security.verifyJWT, function (req, res) {
 })
 
 //Find one by id
-router.get('/:id', security.verifyJWT, function(req, res) {
-    models.Address.findByPk(req.params.id).then(Addresses => {
+router.get('/:idAddress', security.verifyJWT, function(req, res) {
+    models.Address.findByPk(req.params.idAddress).then(Addresses => {
         if (!Addresses) {
             res.status(404).send("NOT FOUND")
         }
@@ -35,7 +35,7 @@ router.get('/:id', security.verifyJWT, function(req, res) {
 })
 
 //Update
-router.put('/:id', security.verifyJWT, function(req, res) {
+router.put('/:idAddress', security.verifyJWT, function(req, res) {
     models.Address.findByPk(req.params.id).then(Addresses => {
         if (!Addresses) {
             res.status(404).send("NOT FOUND")
@@ -53,7 +53,7 @@ router.put('/:id', security.verifyJWT, function(req, res) {
 })
 
 //Delete
-router.delete('/:id', security.verifyJWT, function (req, res) {
+router.delete('/:idAddress', security.verifyJWT, function (req, res) {
     models.Address.destroy({
         where:{id: req.params.id}
     }).then(Address => {

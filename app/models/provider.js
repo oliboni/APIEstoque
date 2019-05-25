@@ -1,13 +1,14 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Provider = sequelize.define('Provider', {
+    idProvider: DataTypes.INTEGER,
     cnpj: DataTypes.STRING,
+    idAddress: DataTypes.INTEGER,
     name: DataTypes.STRING,
-    phone: DataTypes.STRING,
-    idAddress: DataTypes.INTEGER
+    phone: DataTypes.STRING
   }, {});
   Provider.associate = function(models) {
-    Provider.belongsTo(models.Address, {foreignKey: 'idAddress'})
+    Provider.hasMany(models.Address, {foreignKey: 'idAddress'})
   };
   return Provider;
 };

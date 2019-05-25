@@ -27,7 +27,7 @@ router.get('/', security.verifyJWT, function (req, res) {
 })
 
 //Find one by id
-router.get('/:id', security.verifyJWT, function(req, res) {
+router.get('/:idOutput', security.verifyJWT, function(req, res) {
     models.Output.findByPk(req.params.id, {include:
             {model: models.Product, required:true}
         }).then(outputs => {
@@ -39,7 +39,7 @@ router.get('/:id', security.verifyJWT, function(req, res) {
 })
 
 //Update
-router.put('/:id', security.verifyJWT, function(req, res) {
+router.put('/:idOutput', security.verifyJWT, function(req, res) {
     models.Output.findByPk(req.params.id).then(outputs => {
         if (!outputs) {
             res.status(404).send("NOT FOUND")
@@ -57,7 +57,7 @@ router.put('/:id', security.verifyJWT, function(req, res) {
 })
 
 //Delete
-router.delete('/:id', security.verifyJWT, function (req, res) {
+router.delete('/:idOutput', security.verifyJWT, function (req, res) {
     models.Output.destroy({
         where:{id: req.params.id}
     }).then(Output => {

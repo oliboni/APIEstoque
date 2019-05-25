@@ -32,7 +32,7 @@ router.get('/', security.verifyJWT, function (req, res) {
 })
 
 //Find one by id
-router.get('/:id', security.verifyJWT, function(req, res) {
+router.get('/:idUser', security.verifyJWT, function(req, res) {
     models.User.findByPk(req.params.id).then(users => {
         if (!users) {
             res.status(404).send("NOT FOUND")
@@ -42,7 +42,7 @@ router.get('/:id', security.verifyJWT, function(req, res) {
 })
 
 //Update
-router.put('/:id', security.verifyJWT, function(req, res) {
+router.put('/:idUser', security.verifyJWT, function(req, res) {
     models.User.findByPk(req.params.id).then(users => {
         if (!users) {
             res.status(404).send("NOT FOUND")
@@ -57,7 +57,7 @@ router.put('/:id', security.verifyJWT, function(req, res) {
 })
 
 //Delete
-router.delete('/:id', security.verifyJWT, function (req, res) {
+router.delete('/:idUser', security.verifyJWT, function (req, res) {
     models.User.destroy({
         where:{id: req.params.id}
     }).then(User => {

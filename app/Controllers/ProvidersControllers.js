@@ -11,7 +11,7 @@ router.use(bodyParser.json())
 //CRUD
 
 //create
-router.post('/', function (req, res) {
+router.post('/', security.verifyJWT, function (req, res) {
     models.Provider.create(req.body).then(
         providers => res.status(200).send(providers)
     ).catch(err => res.status(500).send("Erro, Verificar "+err))
@@ -27,7 +27,7 @@ router.get('/', security.verifyJWT, function (req, res) {
 })
 
 //Find one by id
-router.get('/:id', security.verifyJWT ,function(req, res) {
+router.get('/:idProvider', security.verifyJWT ,function(req, res) {
     models.Provider.findByPk(req.params.id, {include: {model: models.Address, required:true}}).then(providers => {
         if (!providers) {
             res.status(404).send("NOT FOUND")
@@ -37,7 +37,7 @@ router.get('/:id', security.verifyJWT ,function(req, res) {
 })
 
 //Update
-router.put('/:id', security.verifyJWT, function(req, res) {
+router.put('/:idProvider', security.verifyJWT, function(req, res) {
     models.Provider.findByPk(req.params.id).then(providers => {
         if (!providers) {
             res.status(404).send("NOT FOUND")
@@ -55,7 +55,7 @@ router.put('/:id', security.verifyJWT, function(req, res) {
 })
 
 //Delete
-router.delete('/:id', security.verifyJWT, function (req, res) {
+router.delete('/:idProvider', security.verifyJWT, function (req, res) {
     models.Provider.destroy({
         where:{id: req.params.id}
     }).then(Provider => {
