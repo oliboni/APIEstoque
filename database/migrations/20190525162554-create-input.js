@@ -7,12 +7,6 @@ module.exports = {
         autoIncrement: true,
         type: Sequelize.INTEGER
       },
-      idInput: {
-        allowNull: false,
-        primaryKey: true,
-        unique:true,
-        type: Sequelize.INTEGER
-      },
       idProduct: {
         allowNull:false,
         type: Sequelize.INTEGER

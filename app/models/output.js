@@ -1,7 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Output = sequelize.define('Output', {
-    idOutput: DataTypes.INTEGER,
     idProduct: DataTypes.INTEGER,
     amount: DataTypes.INTEGER,
     unitPrice: DataTypes.FLOAT,

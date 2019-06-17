@@ -25,7 +25,7 @@ router.get('/', security.verifyJWT, function (req, res) {
 })
 
 //Find one by id
-router.get('/:idCategory', security.verifyJWT, function(req, res) {
+router.get('/:id', security.verifyJWT, function(req, res) {
     models.Category.findByPk(req.params.id).then(categories => {
             if (!categories) {
                 res.status(404).send("NOT FOUND")
@@ -35,7 +35,7 @@ router.get('/:idCategory', security.verifyJWT, function(req, res) {
 })
 
 //Update
-router.put('/:idCategory', security.verifyJWT, function(req, res) {
+router.put('/:id', security.verifyJWT, function(req, res) {
     models.Category.findByPk(req.params.id).then(categories => {
         if (!categories) {
             res.status(404).send("NOT FOUND")
@@ -50,7 +50,7 @@ router.put('/:idCategory', security.verifyJWT, function(req, res) {
 })
 
 //Delete
-router.delete('/:idCategory', security.verifyJWT, function (req, res) {
+router.delete('/:id', security.verifyJWT, function (req, res) {
     models.Category.destroy({
         where:{id: req.params.id}
     }).then(Category => {

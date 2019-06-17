@@ -7,12 +7,6 @@ module.exports = {
         autoIncrement: true,
         type: Sequelize.INTEGER
       },
-      idCategory: {
-        allowNull:false,
-        primaryKey:true,
-        unique: true,
-        type: Sequelize.INTEGER
-      },
       name: {
         type: Sequelize.STRING
       },

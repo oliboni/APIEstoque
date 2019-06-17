@@ -7,12 +7,6 @@ module.exports = {
         autoIncrement: true,
         type: Sequelize.INTEGER
       },
-      idAddress: {
-        allowNull: false,
-        primaryKey: true,
-        unique:true,
-        type: Sequelize.INTEGER
-      },
       street: {
         allowNull: false,
         type: Sequelize.STRING
