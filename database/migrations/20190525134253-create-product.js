@@ -3,6 +3,7 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Products', {
       id: {
+        primaryKey: true,
         allowNull: false,
         autoIncrement: true,
         type: Sequelize.INTEGER
@@ -10,10 +11,9 @@ module.exports = {
       idCategory: {
         allowNull: false,
         type: Sequelize.INTEGER,
-        unique:true,
         references: {
           model: 'Categories',
-          key: 'idCategory'
+          key: 'id'
         }
       },
       unitPrice: {

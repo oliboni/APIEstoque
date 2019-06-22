@@ -21,12 +21,12 @@ router.post('/', security.verifyJWT, function (req, res) {
 router.get('/', security.verifyJWT, function (req, res) {
     models.Address.findAll(req.body).then(
         Addresses => res.status(200).send(Addresses)
-    )
+    ).catch(err => res.status(500).send("erro: "+err))
 })
 
 //Find one by id
 router.get('/:id', security.verifyJWT, function(req, res) {
-    models.Address.findByPk(req.params.idAddress).then(Addresses => {
+    models.Address.findByPk(req.params.id).then(Addresses => {
         if (!Addresses) {
             res.status(404).send("NOT FOUND")
         }

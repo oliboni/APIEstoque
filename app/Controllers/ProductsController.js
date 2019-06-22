@@ -20,8 +20,7 @@ router.post('/', security.verifyJWT, function (req, res) {
 //Get all
 router.get('/', security.verifyJWT, function (req, res) {
     models.Product.findAll({include: [
-        {model: models.Category},
-        {model: models.Provider}
+        {model: models.Category}
         ]}).then(
         products => res.status(200).send(products)
     )
@@ -31,7 +30,6 @@ router.get('/', security.verifyJWT, function (req, res) {
 router.get('/:id', security.verifyJWT, function(req, res) {
     models.Product.findByPk(req.params.id, {include: [
         {model: models.Category, required:true},
-        {model: models.Provider, required:true}
     ]}).then(products => {
         if (!products) {
             res.status(404).send("NOT FOUND")
@@ -48,8 +46,6 @@ router.put('/:id', security.verifyJWT, function(req, res) {
         }
 
         products.update({
-            idProduct: req.body.idProduct,
-            idProvider: req.body.idProvider,
             name: req.body.name,
             unitPrice: req.body.unitPrice,
             amount: req.body.amount
