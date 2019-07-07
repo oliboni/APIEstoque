@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     phone: DataTypes.STRING
   }, {});
   Provider.associate = function(models) {
-    Provider.hasMany(models.Address, {foreignKey: 'idAddress'})
+    Provider.belongsTo(models.Address, {foreignKey: 'idAddress'})
   };
   return Provider;
 };
