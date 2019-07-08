@@ -18,7 +18,6 @@ module.exports = {
       },
       idProvider: {
         allowNull:false,
-        unique:true,
         type: Sequelize.INTEGER,
         references:{
           model: 'Providers',

@@ -12,8 +12,18 @@ router.use(bodyParser.json())
 
 //create
 router.post('/', security.verifyJWT, function (req, res) {
-    models.Output.create(req.body).then(
-        outputs => res.status(200).send(outputs)
+    models.Output.create(req.body, {include: [{model: models.Product}]}).then(
+        outputs => {
+            models.Product.findByPk(outputs.idProduct).then(products => {
+                if (!products) {
+                    res.status(404).send("NOT FOUND")
+                }
+                products.update({
+                    amount: parseInt(req.body.amount) - parseInt(products.amount)
+                })
+            })
+            res.status(200).send(outputs)
+        }
     ).catch(err => res.status(500).send("Erro, Verificar "+err))
 })
 

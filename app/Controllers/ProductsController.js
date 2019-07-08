@@ -46,6 +46,7 @@ router.put('/:id', security.verifyJWT, function(req, res) {
         }
 
         products.update({
+            idCategory: req.body.idCategory,
             name: req.body.name,
             unitPrice: req.body.unitPrice,
             amount: req.body.amount

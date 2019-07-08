@@ -12,14 +12,6 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING
       },
-      idAddress: {
-        allowNull: false,
-        type: Sequelize.INTEGER,
-        references:{
-          model: 'Addresses',
-          key: 'id'
-        }
-      },
       name: {
         allowNull: false,
         type: Sequelize.STRING

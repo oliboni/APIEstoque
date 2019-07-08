@@ -19,16 +19,14 @@ router.post('/', security.verifyJWT, function (req, res) {
 
 //Get all
 router.get('/', security.verifyJWT, function (req, res) {
-    models.Provider.findAll({include: {
-        model: models.Address
-        }}).then(
+    models.Provider.findAll().then(
         providers => res.status(200).send(providers)
     )
 })
 
 //Find one by id
 router.get('/:id', security.verifyJWT ,function(req, res) {
-    models.Provider.findByPk(req.params.id, {include: {model: models.Address, required:true}}).then(providers => {
+    models.Provider.findByPk(req.params.id).then(providers => {
         if (!providers) {
             res.status(404).send("NOT FOUND")
         }
@@ -46,8 +44,7 @@ router.put('/:id', security.verifyJWT, function(req, res) {
         providers.update({
             cnpj: req.body.cnpj,
             name: req.body.name,
-            phone: req.body.phone,
-            idAddress: req.body.idAddress
+            phone: req.body.phone
         })
         res.status(200).send(providers)
     })

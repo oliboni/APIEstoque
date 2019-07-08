@@ -12,8 +12,17 @@ router.use(bodyParser.json())
 
 //create
 router.post('/', security.verifyJWT, function (req, res) {
-    models.Input.create(req.body,).then(
-        inputs => res.status(200).send(inputs)
+    models.Input.create(req.body, {include: [{model: models.Product}]}).then(
+        inputs => {
+            models.Product.findByPk(inputs.idProduct).then(products => {
+                if (!products) {
+                    res.status(404).send("NOT FOUND")
+                }
+                products.update({
+                    amount: parseInt(req.body.amount) + parseInt(products.amount)
+                })
+            })
+            res.status(200).send(inputs) }
     ).catch(err => res.status(500).send("Erro, Verificar "+err))
 })
 
