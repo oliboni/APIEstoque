@@ -58,11 +58,12 @@ router.put('/:id', security.verifyJWT, function(req, res) {
 
 //Delete
 router.delete('/:id', security.verifyJWT, function (req, res) {
-    models.Product.destroy({
-        where:{id: req.params.id}
-    }).then(Product => {
-        res.status(200).send("Registro excluido com sucesso")
-    })
+    models.Output.destroy({where:{idProduct: req.params.id} }).then(
+        output => {console.log("Excluido saídas")})
+    models.Input.destroy({where:{idProduct: req.params.id} }).then(
+        input => {console.log("Excluido Entradas")})
+    models.Product.destroy({where:{id: req.params.id} }).then(Product => {
+            res.status(200).send("Produto excluido com sucesso")})
 })
 
 

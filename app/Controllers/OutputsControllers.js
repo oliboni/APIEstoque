@@ -19,7 +19,7 @@ router.post('/', security.verifyJWT, function (req, res) {
                     res.status(404).send("NOT FOUND")
                 }
                 products.update({
-                    amount: parseInt(req.body.amount) - parseInt(products.amount)
+                    amount: parseInt(products.amount) - parseInt(req.body.amount)
                 })
             })
             res.status(200).send(outputs)
