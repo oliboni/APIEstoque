@@ -9,7 +9,7 @@
   "author": "Rodrigo/Saylon",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "dotenv-safe": "^6.1.0",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.5.1",
